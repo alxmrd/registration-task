@@ -4,12 +4,28 @@ import CoinCardsWrapper from './components/coin-section/CoinCardsWrapper.vue'
 </script>
 
 <template>
-  <main class="display-grid">
-    <body>
+  <main>
+    <body class="app-wrapper">
       <CoinCardsWrapper />
       <RegistrationSection />
     </body>
   </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  padding: 70px;
+}
+
+@media (min-width: 769px) {
+  .app-wrapper {
+    gap: 90px;
+    padding: 20px;
+  }
+}
+</style>

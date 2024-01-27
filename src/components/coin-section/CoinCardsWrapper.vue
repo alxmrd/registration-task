@@ -1,13 +1,12 @@
 <template>
-  <div>
+  <div class="coin-cards-wrapper">
     <CoinCard
       v-for="(coin, index) in filteredCoins"
       :key="index"
       :coinName="coin.name"
-      :coinText="coin.text"
-      :coinBadge="coin.badge"
-      :coinValue="coin.value"
-      :coinPercent="coin.percent"
+      :coinSymbol="coin.symbol"
+      :coinPrice="coin.price_usd"
+      :coinPercent="coin.percent_change_24h"
     />
   </div>
 </template>
@@ -31,7 +30,7 @@ export default {
         .then((response) => {
           coins.value = response.data.data
           filteredCoins.value = coins.value.filter((coin) =>
-            ['ETC', 'ETH', 'XRP', 'LTC', 'BCH'].includes(coin.symbol)
+            ['BTC', 'ETH', 'XRP', 'LTC', 'BCH'].includes(coin.symbol)
           )
         })
         .catch((error) => {
@@ -46,3 +45,14 @@ export default {
   }
 }
 </script>
+<style scoped>
+.coin-cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+</style>

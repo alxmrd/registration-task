@@ -1,0 +1,84 @@
+@import './base.css';
+
+body {
+  background: #201d27;
+}
+
+.display-grid {
+  display: grid;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vuejs3-datepicker input {
+  border-radius: 0px;
+  border: none !important;
+}
+
+.vuejs3-datepicker__inputvalue {
+  width: 258px;
+  height: 38px;
+  flex-shrink: 0;
+  border: 1px solid #a9a9a9;
+  background: #f7f7f7;
+  padding: 12px 0 12px 10px !important;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.vuejs3-datepicker input:focus-visible {
+  outline: none;
+}
+
+span .vuejs3-datepicker__typeablecalendar {
+  display: none;
+}
+
+.input::placeholder {
+  color: #b1b1b1;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+}
+
+/* styles for tablets (up to 768px) */
+@media (min-width: 768px) {
+  .vuejs3-datepicker__inputvalue {
+    width: 453px;
+  }
+}
+
+/* styles for desktops (up to 1200px) */
+@media (min-width: 1200px) {
+  .vuejs3-datepicker__inputvalue {
+    width: 401px;
+  }
+}

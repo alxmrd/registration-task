@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "1111",
+      "name": "alex",
+      "dob": "1993-12-04T22:00:00.000Z",
+      "email": "23r23@com.gr",
+      "password": "23rq23!sF"
+    },
+    {
+      "id": "a837",
+      "name": "alex",
+      "dob": "1993-12-04T22:00:00.000Z",
+      "email": "mir@mir.com",
+      "password": "12415@dfs@fF"
+    }
+  ]
+}

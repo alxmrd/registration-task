@@ -4,7 +4,7 @@
       <div class="coin-card-header-icon"><img :src="coinIcon" alt="Icon" /></div>
       <div class="coin-card-header-text">{{ coinSymbol }}</div>
       <div class="coin-card-header-badge">
-        <div class="coin-card-header-badge-text">{{ coinName }}</div>
+        <div class="coin-card-header-badge-text">{{ coinName?.toUpperCase() }}</div>
       </div>
     </div>
     <div class="inner-block"></div>

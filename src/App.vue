@@ -1,11 +1,13 @@
 <script setup>
 import RegistrationSection from './components/registration-form/RegistrationSection.vue'
 import CoinCardsWrapper from './components/coin-section/CoinCardsWrapper.vue'
+import BlocksContainer from './components/blocks-section/BlocksContainer.vue'
 </script>
 
 <template>
   <main>
     <body class="app-wrapper">
+      <BlocksContainer />
       <CoinCardsWrapper />
       <RegistrationSection />
     </body>

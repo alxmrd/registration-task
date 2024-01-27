@@ -1,7 +1,11 @@
 <template>
   <div class="registration-wrapper">
     <div class="form-stepper-container">
-      <StepperComponent :step="step" :nextStepTriggered="nextStepTriggered" />
+      <StepperComponent
+        v-if="!isFormSubmitted"
+        :step="step"
+        :nextStepTriggered="nextStepTriggered"
+      />
       <SuccessFullRegistration v-if="isFormSubmitted" />
       <RegistrationForm
         v-else

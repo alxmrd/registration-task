@@ -8,7 +8,7 @@
       Enjoy spreads as <span>low as 0.6 pips</span> and <span>leverage up to 1000:1</span> on
       instruments <span>like EURUSD, USDJPY, EURJPY, GBPUSD,</span> and <span>Gold.</span>
     </p>
-    <button class="open-account" @click="handleClick">Click</button>
+    <button class="open-account" @click="handleClick">Open Account</button>
     <p class="text-section-demo-account">
       New to trading? Try a <span class="button-text">Demo account.</span>
     </p>
@@ -57,6 +57,7 @@ export default {
   line-height: 39.5px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  margin-top: 70px;
 }
 
 .text-section-header {
@@ -94,6 +95,7 @@ export default {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .text-section-demo-account {
@@ -131,6 +133,7 @@ export default {
   .open-account-container {
     padding-left: 135px;
     padding-right: 135px;
+    margin-bottom: 125px;
   }
 }
 
@@ -138,6 +141,7 @@ export default {
   .open-account-container {
     padding-left: 290px;
     padding-right: 290px;
+    margin-bottom: 250px;
   }
 
   .text-section-header {

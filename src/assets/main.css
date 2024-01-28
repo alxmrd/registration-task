@@ -2,13 +2,15 @@
 
 body {
   background: #201d27;
+  background-image: url('@/assets/general-0-swaps-desktop.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .display-grid {
   display: grid;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   font-weight: normal;
   position: absolute;
   top: 50%;

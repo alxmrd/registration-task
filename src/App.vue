@@ -19,7 +19,7 @@ import OpenAccountSection from './components/OpenAccountSection.vue'
       </div>
     </header>
     <body class="app-wrapper">
-      <OpenAccountSection />
+      <OpenAccountSection class="background-image" />
       <CoinCardsWrapper />
       <BlocksContainer />
       <RegistrationSection />
@@ -46,12 +46,26 @@ import OpenAccountSection from './components/OpenAccountSection.vue'
 </template>
 
 <style scoped>
+.background-image {
+  background: linear-gradient(
+    180deg,
+    rgba(32, 46, 71, 0.65) 36.53%,
+    rgba(32, 46, 71, 0.62) 57.69%,
+    rgba(32, 46, 71, 0.58) 78.84%,
+    rgba(32, 46, 71, 0) 100%
+  );
+  mix-blend-mode: multiply;
+  background-position: top right;
+  background-repeat: no-repeat;
+  mix-blend-mode: hard-light;
+  background-size: cover;
+  align-self: stretch;
+}
 .app-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 70px;
 }
 
 .header-button {
@@ -120,10 +134,6 @@ import OpenAccountSection from './components/OpenAccountSection.vue'
 
 /* On tablet */
 @media (min-width: 768px) and (max-width: 1199px) {
-  .app-wrapper {
-    padding-top: 20px;
-  }
-
   .footer {
     height: 164px;
   }

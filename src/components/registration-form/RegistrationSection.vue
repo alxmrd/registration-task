@@ -1,6 +1,7 @@
 <template>
   <div class="registration-wrapper">
     <div class="form-stepper-container">
+      <RegistrationNotice />
       <StepperComponent
         v-if="!isFormSubmitted"
         :step="step"
@@ -32,12 +33,14 @@ import { ref, watch } from 'vue'
 import RegistrationForm from './RegistrationForm.vue'
 import SuccessFullRegistration from './SuccessFullRegistration.vue'
 import StepperComponent from './StepperComponent.vue'
+import RegistrationNotice from './RegistrationNotice.vue'
 
 export default {
   components: {
     RegistrationForm,
     SuccessFullRegistration,
-    StepperComponent
+    StepperComponent,
+    RegistrationNotice
   },
 
   setup() {

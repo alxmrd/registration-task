@@ -52,12 +52,7 @@ import { ref } from 'vue'
 
 export default {
   name: 'InfoSection',
-  setup() {
-    // Define your reactive variables here
-    // const variable = ref(initialValue);
-    // Return the variables so they are available in the template
-    // return { variable };
-  }
+  setup() {}
 }
 </script>
 
@@ -127,7 +122,6 @@ export default {
 }
 
 .sub-component {
-  /* background-color: blue; */
   flex: 1 0 50%;
   display: flex;
   flex-direction: column;

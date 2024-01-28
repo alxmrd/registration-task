@@ -1,4 +1,5 @@
 <template>
+  <QuestionContainer />
   <div class="container">
     <div class="one-card-container">
       <div class="card">
@@ -45,7 +46,12 @@
 </template>
 
 <script>
+import QuestionContainer from './QuestionContainer.vue'
+
 export default {
+  components: {
+    QuestionContainer
+  },
   name: 'CardContainer'
 }
 </script>

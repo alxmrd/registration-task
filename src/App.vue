@@ -4,6 +4,7 @@ import CoinCardsWrapper from './components/coin-section/CoinCardsWrapper.vue'
 import BlocksContainer from './components/blocks-section/BlocksContainer.vue'
 import socialMediaIcons from './SocialMediaIcons.vue'
 import xmLogo from '@/assets/xm-logo.svg'
+import CarouselComponent from './components/CarouselComponent.vue'
 </script>
 
 <template>
@@ -19,6 +20,7 @@ import xmLogo from '@/assets/xm-logo.svg'
       <CoinCardsWrapper />
       <BlocksContainer />
       <RegistrationSection />
+      <CarouselComponent />
     </body>
     <footer class="footer">
       <div class="top-footer">
@@ -46,7 +48,7 @@ import xmLogo from '@/assets/xm-logo.svg'
   align-items: center;
   justify-content: center;
   gap: 90px;
-  padding: 70px;
+  padding-top: 70px;
 }
 
 .header-button {
@@ -117,7 +119,7 @@ import xmLogo from '@/assets/xm-logo.svg'
 @media (min-width: 768px) and (max-width: 1199px) {
   .app-wrapper {
     gap: 90px;
-    padding: 20px;
+    padding-top: 20px;
   }
 
   .footer {

@@ -74,6 +74,9 @@ export default {
 </script>
 
 <style scoped>
+.registration-wrapper {
+  margin-bottom: 85px;
+}
 .form-stepper-container {
   width: 100%; /* Adjust as needed */
 }
@@ -115,6 +118,10 @@ export default {
   .registration-notice-wrapper {
     max-width: 260px;
     margin: 0 auto;
+  }
+
+  .registration-wrapper {
+    margin-bottom: 73px;
   }
 }
 </style>

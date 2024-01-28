@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="question-container">
     <h1 class="header">Why <span> Trade</span> with XM?</h1>
     <hr class="green-line" />
     <p class="description">
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.question-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,6 +47,7 @@ export default {
   background-color: #29a643;
   width: 70px;
   height: 2px;
+  margin: 25px 0px 25px 0px;
 }
 
 .description {

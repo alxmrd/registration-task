@@ -68,6 +68,11 @@ export default {
 </script>
 
 <style scoped>
+.stepper-wrapper {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
 .step-number.active-step {
   background-color: #29a643;
   box-shadow:
@@ -113,6 +118,10 @@ export default {
   justify-content: center;
 }
 
+.hidden-block {
+  display: none;
+}
+
 .custom-block {
   width: 100%;
   height: 8px;
@@ -136,13 +145,17 @@ export default {
   }
 
   .custom-block {
-    width: 403px;
+    width: 225px;
+  }
+
+  .hidden-block {
+    display: block;
   }
 }
 
-@media (max-width: 600px) {
-  .hidden-block {
-    display: none;
+@media (min-width: 1200px) {
+  .custom-block {
+    width: 403px;
   }
 }
 </style>

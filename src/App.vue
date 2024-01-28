@@ -6,6 +6,7 @@ import socialMediaIcons from './SocialMediaIcons.vue'
 import xmLogo from '@/assets/xm-logo.svg'
 import CarouselComponent from './components/CarouselComponent.vue'
 import InfoSection from './components/InfoSection.vue'
+import OpenAccountSection from './components/OpenAccountSection.vue'
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import InfoSection from './components/InfoSection.vue'
       </div>
     </header>
     <body class="app-wrapper">
+      <OpenAccountSection />
       <CoinCardsWrapper />
       <BlocksContainer />
       <RegistrationSection />
@@ -119,7 +121,6 @@ import InfoSection from './components/InfoSection.vue'
 /* On tablet */
 @media (min-width: 768px) and (max-width: 1199px) {
   .app-wrapper {
-    gap: 90px;
     padding-top: 20px;
   }
 

@@ -21,7 +21,7 @@
         event
       </div>
       <div class="terms-and-conditions-text">
-        Terms and Conditions apply. To read the full T&Cs, click
+        Terms and Conditions apply*. To read the full T&Cs, click
         <span class="link-text"> here</span>
       </div>
     </div>
@@ -112,6 +112,7 @@ export default {
   color: #d51820;
   line-height: 15.66px;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {

@@ -54,5 +54,12 @@ export default {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  margin-bottom: 70px;
+}
+
+@media (min-width: 600px) {
+  .coin-cards-wrapper {
+    margin-bottom: 90px;
+  }
 }
 </style>

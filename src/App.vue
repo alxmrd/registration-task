@@ -5,6 +5,7 @@ import BlocksContainer from './components/blocks-section/BlocksContainer.vue'
 import socialMediaIcons from './SocialMediaIcons.vue'
 import xmLogo from '@/assets/xm-logo.svg'
 import CarouselComponent from './components/CarouselComponent.vue'
+import InfoSection from './components/InfoSection.vue'
 </script>
 
 <template>
@@ -21,6 +22,7 @@ import CarouselComponent from './components/CarouselComponent.vue'
       <BlocksContainer />
       <RegistrationSection />
       <CarouselComponent />
+      <InfoSection />
     </body>
     <footer class="footer">
       <div class="top-footer">
@@ -47,7 +49,6 @@ import CarouselComponent from './components/CarouselComponent.vue'
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 90px;
   padding-top: 70px;
 }
 

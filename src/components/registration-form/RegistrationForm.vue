@@ -204,6 +204,7 @@ export default {
 
     const submit = async () => {
       if (isValid.value.email && isValid.value.password) {
+        /* DISABLING THIS FOR DEMO PURPOSES
         try {
           const response = await axios.post('http://localhost:3000/users', {
             name: name.value,
@@ -220,6 +221,8 @@ export default {
         } catch (error) {
           console.error('Error submitting form:', error)
         }
+      */
+        emit('formSubmitted', true)
       }
     }
 

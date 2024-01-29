@@ -1,14 +1,10 @@
 # registration-task
 
-This template should help get you started developing with Vue 3 in Vite.
+XM Interview Assesment
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+[VSCode](https://code.visualstudio.com/)
 
 ## Project Setup
 
@@ -38,4 +34,16 @@ npm run test:unit
 
 ```sh
 npm run lint
+```
+
+## Server Simulation
+
+The server simulation for the registration process is currently commented out for demo purposes. If you want to activate this:
+
+1. Uncomment the Axios request in the `RegistrationForm` component. This will enable the application to make HTTP requests to the simulated server for the registration process.
+
+2. Run the following command to start the server simulation:
+
+```sh
+npm run api
 ```

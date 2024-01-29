@@ -26,7 +26,7 @@ export default {
   name: 'MyComponent',
   setup() {
     const handleClick = () => {
-      console.log('open account clicked')
+      alert('open account clicked')
     }
 
     return {

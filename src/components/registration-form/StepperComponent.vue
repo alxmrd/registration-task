@@ -68,11 +68,13 @@ export default {
 </script>
 
 <style scoped>
+/* Styles for the stepper wrapper*/
 .stepper-wrapper {
   padding-left: 60px;
   padding-right: 60px;
 }
 
+/* Styles for the steps*/
 .step-number.active-step {
   background-color: #29a643;
   box-shadow:
@@ -118,6 +120,7 @@ export default {
   justify-content: center;
 }
 
+/* Styles for the blocks*/
 .hidden-block {
   display: none;
 }

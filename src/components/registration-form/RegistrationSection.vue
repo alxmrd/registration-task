@@ -78,7 +78,7 @@ export default {
   margin-bottom: 85px;
 }
 .form-stepper-container {
-  width: 100%; /* Adjust as needed */
+  width: 100%;
 }
 
 .registration-notice-wrapper {

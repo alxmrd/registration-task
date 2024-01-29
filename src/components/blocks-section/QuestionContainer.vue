@@ -17,6 +17,7 @@ export default {
 </script>
 
 <style scoped>
+/* The main container for the question section */
 .question-container {
   display: flex;
   flex-direction: column;
@@ -29,6 +30,7 @@ export default {
   text-align: center;
 }
 
+/* Styles for the header text */
 .header {
   color: #fff;
   font-family: 'Roboto', sans-serif;
@@ -37,11 +39,13 @@ export default {
   line-height: 43px;
 }
 
+/* Styles for the span elements inside the header and description */
 .header span,
 .description span {
   font-weight: 700;
 }
 
+/* Styles for the green line under the header */
 .green-line {
   border: none;
   background-color: #29a643;
@@ -50,6 +54,7 @@ export default {
   margin: 25px 0px 25px 0px;
 }
 
+/* Styles for the description text */
 .description {
   color: #fff;
   font-family: 'Roboto', sans-serif;
